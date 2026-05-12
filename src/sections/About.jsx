@@ -113,7 +113,7 @@ export default function About() {
           <div className="bento-card glass-card glass-card-hover p-2 md:col-span-1 overflow-hidden">
             <div className="w-full h-full min-h-[200px] rounded-xl overflow-hidden">
               <img 
-                src="/src/assets/photo.jpg" 
+                src="/photo.jpg" 
                 alt="Taranjot Singh" 
                 className="w-full h-full object-cover rounded-xl hover:scale-105 transition-transform duration-500"
               />
