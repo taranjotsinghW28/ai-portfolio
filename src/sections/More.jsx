@@ -102,24 +102,26 @@ export default function More() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
           {/* Resume Card */}
-          <button
-            onClick={openGmail}
-            className="explore-card glass-card glass-card-hover p-8 text-center group border border-ai-accent/30 w-full"
-          >
-            <div className="w-16 h-16 rounded-2xl bg-ai-accent/10 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
-              <BookOpen className="w-8 h-8 text-ai-accent" />
-            </div>
-            <h3 className="text-2xl font-display font-bold mb-3 text-ai-accent">
-              Resume
-            </h3>
-            <p className="dark:text-gray-400 text-gray-500 text-sm leading-relaxed mb-6">
-              Download my full resume with detailed experience, projects, and certifications.
-            </p>
-            <span className="inline-flex items-center gap-2 text-sm font-medium text-ai-accent group-hover:gap-3 transition-all">
-              Email Me
-              <ExternalLink className="w-4 h-4" />
-            </span>
-          </button>
+{/* Resume Card - Downloads PDF */}
+<a
+  href="/resume.pdf"
+  download="Taranjot-Singh-Resume.pdf"
+  className="explore-card glass-card glass-card-hover p-8 text-center group border border-ai-accent/30 block no-underline"
+>
+  <div className="w-16 h-16 rounded-2xl bg-ai-accent/10 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+    <BookOpen className="w-8 h-8 text-ai-accent" />
+  </div>
+  <h3 className="text-2xl font-display font-bold mb-3 text-ai-accent">
+    Resume
+  </h3>
+  <p className="dark:text-gray-400 text-gray-500 text-sm leading-relaxed mb-6">
+    Download my full resume with detailed experience, projects, and certifications.
+  </p>
+  <span className="inline-flex items-center gap-2 text-sm font-medium text-ai-accent group-hover:gap-3 transition-all">
+    Download CV
+    <ExternalLink className="w-4 h-4" />
+  </span>
+</a>
 
           {/* Achievements Card */}
           <button
